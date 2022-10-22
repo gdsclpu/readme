@@ -28,7 +28,7 @@ Next2.onclick = function () {
 Back2.onclick = function () {
   Form2.style.display = 'block';
   Form3.style.display = 'none';
-  progress.style.width = '250px';
+  progress.style.width = '240px';
 };
 Next3.onclick = function () {
   Form3.style.display = 'none';
