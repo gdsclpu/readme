@@ -134,7 +134,9 @@ form button {
 #Form3 {
   display: none;
 }
-
+#Form4 {
+  display: none;
+}
 .step-row {
   width: 100%;
   height: 50px;
@@ -387,4 +389,49 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+.checkbox{
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  outline:#f04446
+}
+
+.checkbox input{
+  display: none;
+}
+
+.checkmark{
+  width: 0.64em;
+  height: 0.64em;
+  border: 2px solid #fc115f;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark :after {
+  display: block;
+}
+.container input:checked ~ .checkmark {
+  background-color: #fc115f;
+}
+.container .checkmark:after {
+  border: solid #fc115f;
+}
+.checkboxes{
+  padding: 5px; 
+  width: 105px;
+  white-space: nowrap;
+  
+}
+.upper{
+  padding-top: 10px;
 }
